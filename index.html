@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://kit.fontawesome.com/bb32369234.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles .css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Reproductor de Musica</title>
+</head>
+<body>
+<div class="container1">
+    <div class="player">
+        <div class="player-controls">
+            <div class="player-btn player-btn-small">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+        <h5 class="p-title">Playing Now</h5>
+            <div class="player-btn player-btn-small">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+            <div class="album">
+            <img src="images/2.jpg" width="200px" height="200px" alt="albumcover" class="img-album">
+            </div>
+                <h2 class="artist">Disclosure</h2>
+                <h3 class="song"></h3>
+                <input type="range" value="20" min="0" class="level">
+                <div class="audio-duration">
+                <div class="start">00:01</div>
+                <div class="end">04:30</div>
+            </div>
+        <audio class="player-audio" controls id="audio" >
+        <source src="500476.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="player-controls">
+            <div class="player-btn player-btn-medium">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+
+            <div class="player-btn player-btn-medium blue" id="play">
+                <i class="fa-solid fa-play"></i>
+                <i class="fa-solid fa-pause hide"></i>
+            </div>
+
+            <div class="player-btn player-btn-medium">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
